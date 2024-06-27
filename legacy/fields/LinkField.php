@@ -1,6 +1,6 @@
 <?php
 
-namespace typedlinkfield\fields;
+namespace _typedlinkfield\fields;
 
 use Craft;
 

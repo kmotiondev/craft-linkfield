@@ -21,7 +21,7 @@
 {% namespace name %}
   <div class="linkfield{% if field.hasSettings %} withSettings{% endif %}" id="{{ name }}">
     {% if linkTypes|length == 0 %}
-      <p>{{ 'No link types available.'|t('typedlinkfield') }}</p>
+      <p>{{ 'No link types available.'|t('_typedlinkfield') }}</p>
     {% else %}
       <div class="linkfield--field">
         {% if field.hasSingleLinkType %}
@@ -48,7 +48,7 @@
               id:       'target',
               name:     'target',
               value:    '_blank',
-              label:    'Open in new window?'|t('typedlinkfield'),
+              label:    'Open in new window?'|t('_typedlinkfield'),
               checked:  value.target is defined and value.target == '_blank' ? true : null,
               disabled: disabled,
             }) }}
@@ -63,7 +63,7 @@
               disabled:    disabled,
               errors:      value.getErrors('customText'),
               id:          'customText',
-              label:       'Custom link text'|t('typedlinkfield'),
+              label:       'Custom link text'|t('_typedlinkfield'),
               name:        'customText',
               maxlength:   field.customTextMaxLength > 0 ? field.customTextMaxLength : false,
               placeholder: field.defaultText == '' ? '' : field.defaultText|t('site'),
@@ -77,7 +77,7 @@
               disabled: disabled,
               errors:   value.getErrors('ariaLabel'),
               id:       'ariaLabel',
-              label:    'Aria label'|t('typedlinkfield'),
+              label:    'Aria label'|t('_typedlinkfield'),
               name:     'ariaLabel',
               value:    value.ariaLabel is defined ? value.ariaLabel : "",
             }) }}
@@ -88,7 +88,7 @@
               disabled: disabled,
               errors:   value.getErrors('title'),
               id:       'title',
-              label:    'Title'|t('typedlinkfield'),
+              label:    'Title'|t('_typedlinkfield'),
               name:     'title',
               value:    value.title is defined ? value.title : "",
             }) }}

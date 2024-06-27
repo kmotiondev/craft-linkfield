@@ -1,6 +1,6 @@
 <?php
 
-namespace typedlinkfield;
+namespace _typedlinkfield;
 
 use craft\events\RegisterComponentTypesEvent;
 use craft\services\Fields;

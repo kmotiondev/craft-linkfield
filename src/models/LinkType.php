@@ -100,7 +100,7 @@ class LinkType extends Model
    */
   public function getTranslatedDisplayGroup(): string {
     if (!isset($this->_translatedDisplayGroup)) {
-      $this->_translatedDisplayGroup = Craft::t('typedlinkfield', $this->displayGroup);
+      $this->_translatedDisplayGroup = Craft::t('_typedlinkfield', $this->displayGroup);
     }
 
     return $this->_translatedDisplayGroup;

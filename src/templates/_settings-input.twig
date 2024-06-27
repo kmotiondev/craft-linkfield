@@ -3,7 +3,7 @@
 <fieldset>
   {% if linkType.name != 'custom' %}
     {{ forms.checkboxField({
-      label:   'Disable {elementName} input validation'|t('typedlinkfield', { 'elementName': linkType.displayName }),
+      label:   'Disable {elementName} input validation'|t('_typedlinkfield', { 'elementName': linkType.displayName }),
       id:      'disableValidation',
       name:    'disableValidation',
       checked: linkType.disableValidation,
@@ -11,7 +11,7 @@
   {% endif %}
 
   {{ forms.checkboxField({
-    label:   'Allow aliases and environment variables'|t('typedlinkfield'),
+    label:   'Allow aliases and environment variables'|t('_typedlinkfield'),
     id:      'allowAliases',
     name:    'allowAliases',
     checked: linkType.allowAliases,

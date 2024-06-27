@@ -292,6 +292,6 @@ abstract class AbstractLinkFieldTest extends TestCase
     $infoProperty->setValue(Craft::$app, null);
 
     // Install the plugin
-    self::$craft->getPlugins()->installPlugin('typedlinkfield');
+    self::$craft->getPlugins()->installPlugin('_typedlinkfield');
   }
 }

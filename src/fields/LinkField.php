@@ -352,7 +352,7 @@ class LinkField extends ForeignField
    * @inheritDoc
    */
   public static function inputTemplate(): string {
-    return 'typedlinkfield/_input';
+    return '_typedlinkfield/_input';
   }
 
   /**
@@ -394,7 +394,7 @@ class LinkField extends ForeignField
    * @inheritDoc
    */
   public static function settingsTemplate(): ?string {
-    return 'typedlinkfield/_settings';
+    return '_typedlinkfield/_settings';
   }
 
   /**
@@ -414,6 +414,6 @@ class LinkField extends ForeignField
    * @inheritDoc
    */
   public static function t(string $message): string {
-    return Craft::t('typedlinkfield', $message);
+    return Craft::t('_typedlinkfield', $message);
   }
 }

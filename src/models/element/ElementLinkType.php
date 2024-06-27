@@ -85,7 +85,7 @@ class ElementLinkType extends LinkType
    */
   public function getInputHtml(Link $value, bool $disabled): string {
     return Craft::$app->view->renderTemplate(
-      'typedlinkfield/_input-element',
+      '_typedlinkfield/_input-element',
       [
         'disabled'     => $disabled,
         'elementField' => $this->getElementField($value),
@@ -101,7 +101,7 @@ class ElementLinkType extends LinkType
    */
   public function getSettingsHtml(LinkField $field): string {
     return Craft::$app->view->renderTemplate(
-      'typedlinkfield/_settings-element',
+      '_typedlinkfield/_settings-element',
       [
         'linkType' => $this,
         'sources' => $this->sources,
@@ -271,7 +271,7 @@ class ElementLinkType extends LinkType
       'id'    => 'customQuery',
       'name'  => 'customQuery',
       'value' => $queryValue,
-      'placeholder' => Craft::t('typedlinkfield', 'Query, starts with "#" or "?"'),
+      'placeholder' => Craft::t('_typedlinkfield', 'Query, starts with "#" or "?"'),
     ];
   }
 

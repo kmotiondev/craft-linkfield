@@ -1,8 +1,8 @@
 {% import "_includes/forms" as forms %}
 
 {{ forms.checkboxSelectField({
-  label:         '{elementName} sources'|t('typedlinkfield', { 'elementName': linkType.displayName }),
-  instructions:  'Select the available sources.'|t('typedlinkfield'),
+  label:         '{elementName} sources'|t('_typedlinkfield', { 'elementName': linkType.displayName }),
+  instructions:  'Select the available sources.'|t('_typedlinkfield'),
   id:            'sources',
   name:          'sources',
   options:       linkType.availableSources,
@@ -12,7 +12,7 @@
 
 <fieldset>
   {{ forms.checkboxField({
-    label:   'Allow users to enter custom queries that will be appended to the url'|t('typedlinkfield'),
+    label:   'Allow users to enter custom queries that will be appended to the url'|t('_typedlinkfield'),
     name:    'allowCustomQuery',
     id:      'allowCustomQuery',
     name:    'allowCustomQuery',
@@ -20,7 +20,7 @@
   }) }}
 
   {{ forms.checkboxField({
-    label:   'Allow links to reference a different site'|t('typedlinkfield'),
+    label:   'Allow links to reference a different site'|t('_typedlinkfield'),
     name:    'allowCrossSiteLink',
     id:      'allowCrossSiteLink',
     name:    'allowCrossSiteLink',

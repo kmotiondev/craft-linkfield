@@ -6,7 +6,7 @@
 <div class="linkFieldAdmin" id="adminUi">
   <div class="linkFieldAdmin--tabs">
     <div class="linkFieldAdmin--tabsRow selected" data-name="_general">
-      <button class="linkFieldAdmin--tabsTab">{{ 'General settings'|t('typedlinkfield') }}</button>
+      <button class="linkFieldAdmin--tabsTab">{{ 'General settings'|t('_typedlinkfield') }}</button>
     </div>
 
     <div class="linkFieldAdmin--tabsRow all">
@@ -16,7 +16,7 @@
           on:   field.enableAllLinkTypes,
         }) -}}
       </div>
-      {{ 'Enable all'|t('typedlinkfield') }}
+      {{ 'Enable all'|t('_typedlinkfield') }}
     </div>
 
     {%- for linkType in field.availableLinkTypes.sort -%}
@@ -43,7 +43,7 @@
   </div>
   <div class="linkFieldAdmin--body">
     <div class="linkFieldAdmin--bodyContent selected" data-name="_general">
-      {% include 'typedlinkfield/_settings-general' %}
+      {% include '_typedlinkfield/_settings-general' %}
     </div>
 
     {%- for linkType in field.availableLinkTypes -%}

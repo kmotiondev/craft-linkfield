@@ -30,7 +30,7 @@ class LinkField extends Field implements FieldInterface
    * @inheritDoc
    */
   public function getMappingTemplate(): string {
-    return 'typedlinkfield/_feedme';
+    return '_typedlinkfield/_feedme';
   }
 
   /**

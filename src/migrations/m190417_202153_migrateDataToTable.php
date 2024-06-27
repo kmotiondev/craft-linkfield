@@ -63,7 +63,7 @@ class m190417_202153_migrateDataToTable extends Migration
     $this->update(Table::FIELDS, [
       'type' => 'lenz\\linkfield\\fields\\LinkField',
     ], [
-      'type' => 'typedlinkfield\\fields\\LinkField'
+      'type' => '_typedlinkfield\\fields\\LinkField'
     ]);
 
     $rows = (new Query())

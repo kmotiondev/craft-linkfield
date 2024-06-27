@@ -22,8 +22,8 @@ The plugin can be installed from the integrated plugin store by searching for
 
 3. Finally, install and enable the plugin:
    
-       ./craft plugin/install typedlinkfield
-       ./craft plugin/enable typedlinkfield
+       ./craft plugin/install _typedlinkfield
+       ./craft plugin/enable _typedlinkfield
 
 ## Usage
 

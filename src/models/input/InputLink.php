@@ -142,7 +142,7 @@ class InputLink extends Link
     ]);
 
     if (!$isValid) {
-      $this->addError($attribute, Craft::t('typedlinkfield', 'Please enter a valid phone number.'));
+      $this->addError($attribute, Craft::t('_typedlinkfield', 'Please enter a valid phone number.'));
     }
   }
 }

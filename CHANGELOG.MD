@@ -92,7 +92,7 @@
 - New: Eagerloading of linked elements
 - New: Cache for linked element urls and titles
 - New: Internal links to different sites (see https://github.com/sebastian-lenz/craft-linkfield/issues/44)
-- Changed: The php namespace of the plugin has been changed from `typedlinkfield` to `lenz\linkfield`
+- Changed: The php namespace of the plugin has been changed from `_typedlinkfield` to `lenz\linkfield`
 - Changed: Link types now use a common base class `lenz\linkfield\models\LinkType`
 - Changed: Link values now create different models based on the chosen link type
 

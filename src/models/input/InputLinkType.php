@@ -47,7 +47,7 @@ class InputLinkType extends LinkType
    * @inheritDoc
    */
   public function getDisplayName(): string {
-    return Craft::t('typedlinkfield', $this->displayName);
+    return Craft::t('_typedlinkfield', $this->displayName);
   }
 
   /**
@@ -55,7 +55,7 @@ class InputLinkType extends LinkType
    */
   public function getInputHtml(Link $value, bool $disabled): string {
     return Craft::$app->view->renderTemplate(
-      'typedlinkfield/_input-input',
+      '_typedlinkfield/_input-input',
       [
         'inputField' => $this->getInputField($value, $disabled),
         'linkType'   => $this,
@@ -68,7 +68,7 @@ class InputLinkType extends LinkType
    */
   public function getSettingsHtml(LinkField $field): string {
     return Craft::$app->view->renderTemplate(
-      'typedlinkfield/_settings-input',
+      '_typedlinkfield/_settings-input',
       [
         'linkType' => $this,
       ]
@@ -121,7 +121,7 @@ class InputLinkType extends LinkType
     }
 
     if (isset($this->placeholder)) {
-      $field['placeholder'] = Craft::t('typedlinkfield', $this->placeholder);
+      $field['placeholder'] = Craft::t('_typedlinkfield', $this->placeholder);
     }
 
     return $field;

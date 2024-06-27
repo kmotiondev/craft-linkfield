@@ -32,7 +32,7 @@ class SiteLinkType extends LinkType
    * @return string
    */
   public function getDisplayName(): string {
-    return Craft::t('typedlinkfield', $this->displayName);
+    return Craft::t('_typedlinkfield', $this->displayName);
   }
 
   /**
@@ -40,7 +40,7 @@ class SiteLinkType extends LinkType
    */
   public function getInputHtml(Link $value, bool $disabled): string {
     return Craft::$app->view->renderTemplate(
-      'typedlinkfield/_input-select',
+      '_typedlinkfield/_input-select',
       [
         'linkType'    => $this,
         'selectField' => $this->getSelectField($value, $disabled),
@@ -53,7 +53,7 @@ class SiteLinkType extends LinkType
    */
   public function getSettingsHtml(LinkField $field): string {
     return Craft::$app->view->renderTemplate(
-      'typedlinkfield/_settings-site',
+      '_typedlinkfield/_settings-site',
       [
         'linkType' => $this,
       ]
