@@ -21,10 +21,10 @@
     }
   },
   "extra": {
-    "handle": "typedlinkfield",
-    "name": "Typed link field",
-    "developer": "Sebastian Lenz",
-    "developerUrl": "https://github.com/sebastian-lenz/"
+    "handle": "_typedlinkfield",
+    "name": "Typed Link Field",
+    "developer": "Kmotion Design",
+    "developerUrl": "https://github.com/kmotiondev/"
   },
   "scripts": {
     "test": "./vendor/bin/phpunit ./tests",
